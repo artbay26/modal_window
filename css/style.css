@@ -1,0 +1,215 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+.box__wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(193, 189, 186, 0.5);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+.box {
+  position: relative;
+  height: 450px;
+  width: 450px;
+}
+.box__modal {
+  position: absolute;
+}
+.box__modal_short {
+  height: 394px !important;
+}
+.box .modal {
+  height: 100%;
+  width: 100%;
+  background-color: #25333C;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.box .modal__body {
+  padding: 5%;
+}
+.box .modal__body .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-size: 1rem;
+  width: 100%;
+  height: 3rem;
+  line-height: 3;
+}
+.box .modal__body .tabs__tab {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+.box .modal__body .tabs__tab_green {
+  background-color: #1AB188;
+}
+.box .modal__body .tabs__tab_grey {
+  background-color: #43515A;
+}
+.box .modal__body .tabs__tab_grey:hover {
+  background-color: #607d75;
+  cursor: pointer;
+}
+.box .modal__body .form__title {
+  width: 100%;
+  height: 6rem;
+  line-height: 3;
+  text-align: center;
+  font-size: 32px;
+}
+.box .modal__body .form__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.box .modal__body .form__body .form__names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  height: 2rem;
+  line-height: 2;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.box .modal__body .form__body .form__names .form__name {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 49%;
+          flex: 0 0 49%;
+}
+.box .modal__body .form__body input {
+  border: 1px solid white;
+  background-color: #25333C;
+  padding: 0 15px;
+  width: 100%;
+  height: 2rem;
+  line-height: 2;
+  text-align: left;
+  color: white;
+  font-size: 1rem;
+}
+.box .modal__body .form__body input::-webkit-input-placeholder {
+  color: white;
+}
+.box .modal__body .form__body input::-moz-placeholder {
+  color: white;
+}
+.box .modal__body .form__body input:-ms-input-placeholder {
+  color: white;
+}
+.box .modal__body .form__body input::-ms-input-placeholder {
+  color: white;
+}
+.box .modal__body .form__body input::placeholder {
+  color: white;
+}
+.box .modal__body .form__body input::-webkit-input-placeholder::after {
+  content: "star";
+  color: #1AB188;
+  opacity: 1;
+}
+.box .modal__body .form__body input::-moz-placeholder::after {
+  content: "star";
+  color: #1AB188;
+  opacity: 1;
+}
+.box .modal__body .form__body input:-ms-input-placeholder::after {
+  content: "star";
+  color: #1AB188;
+  opacity: 1;
+}
+.box .modal__body .form__body input::-ms-input-placeholder::after {
+  content: "star";
+  color: #1AB188;
+  opacity: 1;
+}
+.box .modal__body .form__body input::placeholder::after {
+  content: "star";
+  color: #1AB188;
+  opacity: 1;
+}
+.box .modal__body .form__body a {
+  font-size: 0.75rem;
+  color: #1AB188;
+  text-align: end;
+  cursor: pointer;
+  margin-top: -18px;
+}
+.box .modal__body .form__body a:hover {
+  color: white;
+}
+.box .modal__body .form .btn {
+  height: 4rem;
+  line-height: 2;
+  background-color: #1AB188;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.box .modal__body .form .btn:hover {
+  background-color: #148a6b;
+}
+.box .modal__body .form .btn_mrgn {
+  margin-top: -18px;
+}
+
+.showMod {
+  background: #148a6b;
+  color: white;
+  font-size: 16px;
+  border-radius: 3px;
+  margin: 50px auto;
+  width: 100px;
+  height: 48px;
+}
+.showMod:hover {
+  background: white;
+  color: #148a6b;
+  cursor: pointer;
+}

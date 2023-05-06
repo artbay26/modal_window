@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="box__wrapper hide">
+        <div class="box">
+            <!--box_1-->
+            <div class="box__modal modal hide ">
+                <div class="modal__body">
+                    <div class="modal__tabs tabs">
+                        <div class="tabs__tab tabs__tab_green">Sign Up</div>
+                        <div class="tabs__tab tabs__tab_grey" id="loginBtn">Log In</div>
+                    </div>
+                    <div class="modal__form form">
+                        <div class="form__title">Sign Up for Free</div>
+                        <div class="form__body">
+                            <div class="form__names">
+                                <div class="form__name">
+                                    <input type="text" class="form__inp" required placeholder="First Name*">
+                                </div>
+                                <div class="form__name">
+                                    <input type="text" class="form__inp" required placeholder="Last Name*">
+                                </div>
+                            </div>
+                            <input type="email" class="form__inp" required placeholder="Email Adress*">
+                            <input type="text" class="form__inp" required placeholder="Set A Password*">
+                            <button type="submit" class="btn" id="btnGetStarted">Get started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--box_2-->
+            <div class="box__modal modal box__modal_short">
+                <div class="modal__body">
+                    <div class="modal__tabs tabs _loginGreen">
+                        <div class="tabs__tab tabs__tab_grey" id="signUpBtn">Sign Up</div>
+                        <div class="tabs__tab tabs__tab_green">Log In</div>
+                    </div>
+                    <div class="modal__form form">
+                        <div class="form__title">Welcome Back!</div>
+                        <div class="form__body">
+                            <input type="email" class="form__inp" required placeholder="Email Adress*">
+                            <input type="password" class="form__inp" required placeholder="Password*">
+                            <a href="#">Forgot Password?</a>
+                            <button type="submit" class="btn btn_mrgn" id="btnLoginBotoom">Log in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="showMod">show modal</button>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
